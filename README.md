@@ -48,7 +48,7 @@ macOS 15 ou superior (Apple Silicon e Intel; testado em Apple Silicon).
 ### Instalar
 1. Em [**Releases**](../../releases/latest), descarregue `Toth-1.0.0.zip` e descomprima.
 2. Arraste `Toth.app` para a pasta **Aplicações**.
-3. **Primeira abertura:** como a app ainda não está notarizada pela Apple, o macOS bloqueia-a. Clique com o botão direito em `Toth.app` → **Abrir** → **Abrir**. (Em alternativa: *Definições do Sistema → Privacidade e Segurança → Abrir mesmo assim*, ou no Terminal `xattr -dr com.apple.quarantine /Applications/Toth.app`.)
+3. **Primeira abertura (só é preciso uma vez):** como a app ainda não está notarizada pela Apple, o macOS mostra *“Toth” não aberto*, com os botões *Mover para o Lixo* e *OK*. **Não mova para o Lixo.** Clique em **OK**, abra **Definições do Sistema → Privacidade e Segurança**, desça até **Segurança**, clique em **Abrir mesmo assim** junto a “Toth”, confirme com a palavra-passe ou Touch ID e clique em **Abrir**. (No macOS 14 ou anterior basta botão direito → **Abrir**. Alternativa no Terminal: `xattr -dr com.apple.quarantine /Applications/Toth.app`.)
 4. Conceda a permissão de **Gravação de Ecrã** (*Definições do Sistema → Privacidade e Segurança → Gravação de Ecrã e Áudio do Sistema*) e volte a abrir a app. O Toth fica na **barra de menus**, sem ícone no Dock.
 
 ### Usar
@@ -99,7 +99,7 @@ macOS 15 or later (Apple Silicon and Intel; tested on Apple Silicon).
 ### Install
 1. Under [**Releases**](../../releases/latest), download `Toth-1.0.0.zip` and unzip it.
 2. Drag `Toth.app` to **Applications**.
-3. **First launch:** the app is not yet notarized by Apple, so macOS blocks it. Right-click `Toth.app` → **Open** → **Open**. (Alternatively: *System Settings → Privacy & Security → Open Anyway*, or in Terminal `xattr -dr com.apple.quarantine /Applications/Toth.app`.)
+3. **First launch (only needed once):** because the app is not yet notarized by Apple, macOS shows *“Toth” Not Opened*, with *Move to Trash* and *Done* buttons. **Don't move it to the Trash.** Click **Done**, open **System Settings → Privacy & Security**, scroll to **Security**, click **Open Anyway** next to “Toth”, confirm with your password or Touch ID, then click **Open**. (On macOS 14 or earlier, right-click → **Open** is enough. Terminal alternative: `xattr -dr com.apple.quarantine /Applications/Toth.app`.)
 4. Grant the **Screen Recording** permission (*System Settings → Privacy & Security → Screen & System Audio Recording*) and reopen the app. Toth lives in the **menu bar**, with no Dock icon.
 
 ### Use
