@@ -9,7 +9,7 @@
 
 <p align="center"><img src="images/toth-editor-pt.png" alt="Editor do Toth" width="900"></p>
 
-> **Versão 1.3.0 (pré-visualização).** Descarregue em [**Releases**](../../releases/latest). A app ainda não está notarizada pela Apple (ver *Instalar*) e os documentos legais são rascunhos. Este repositório só tem a página de descarregamento; o código-fonte é privado.
+> **Versão 1.4.3 (pré-visualização).** Descarregue em [**Releases**](../../releases/latest). A app ainda não está notarizada pela Apple (ver *Instalar*) e os documentos legais são rascunhos. Este repositório só tem a página de descarregamento; o código-fonte é privado.
 
 ---
 
@@ -36,11 +36,12 @@
 - **Exportar PNG** ou **copiar tudo** para a área de transferência.
 
 **Biblioteca**
-- **Abrir Biblioteca** (botão no canto inferior direito): grelha com a **pré-visualização atual** de cada captura, para escolher clicando; faixa de miniaturas no editor.
+- **Abrir Biblioteca** (botão no canto inferior direito): grelha com a **pré-visualização atual** de cada captura, para escolher clicando; faixa de miniaturas no editor, que se pode **ocultar/mostrar** (botão «Biblioteca» no rodapé, ou *Ver → Mostrar/ocultar Biblioteca*, ⌥⌘L).
 - **Abrir** (barra superior): abre **qualquer imagem do computador** (PNG, JPEG, HEIC, TIFF, GIF, BMP…) no editor. Fica como captura nova (o ficheiro original não é tocado) e as alterações guardam-se; com **Salvar como** exporta em **PNG, JPEG, HEIC ou TIFF**.
 - Cada captura é **um só ficheiro `.capture`** (um ZIP normal) em `~/Pictures/Capture`, com nome **sem espaços**: `Toth_AAAA-MM-DD_HH.MM.SS.capture`. Os ficheiros `.capture` **abrem com o Toth** (duplo clique, *Abrir com*, ou arrastar para o ícone do Dock).
 
 **Comodidades**
+- **Janela ajustável:** pode ficar estreita (as ferramentas deslizam na barra; as setas «‹ ›» deslizam as ferramentas **de forma contínua**: um clique avança um pouco, mantendo premido continua a deslizar, e a roda/trackpad também; apagam-se quando não há mais para esse lado), e o painel de **Propriedades** está sempre à direita, com uma divisória que se **arrasta** para o redimensionar, até desaparecer para o lado; com o painel escondido aparece uma **faixa larga** com uma pega bem visível: um clique, ou arrastar para a esquerda, volta a abri-lo (também por *Ver → Mostrar/ocultar Propriedades*, ⌥⌘P; duplo clique na divisória esconde-o).
 - O Toth também aparece em *Abrir com* para imagens.
 - Cada ferramenta **lembra a última personalização**, mesmo depois de fechar a app.
 - **Português e inglês**, com mudança imediata em *Preferências*.
@@ -50,7 +51,7 @@
 macOS 15 ou superior (Apple Silicon e Intel; testado em Apple Silicon).
 
 ### Instalar
-1. Em [**Releases**](../../releases/latest), descarregue `Toth-1.3.0.zip` e descomprima.
+1. Em [**Releases**](../../releases/latest), descarregue `Toth-1.4.3.zip` e descomprima.
 2. Arraste `Toth.app` para a pasta **Aplicações**.
 3. **Primeira abertura (só é preciso uma vez):** como a app ainda não está notarizada pela Apple, o macOS mostra *“Toth” não aberto*, com os botões *Mover para o Lixo* e *OK*. **Não mova para o Lixo.** Clique em **OK**, abra **Definições do Sistema → Privacidade e Segurança**, desça até **Segurança**, clique em **Abrir mesmo assim** junto a “Toth”, confirme com a palavra-passe ou Touch ID e clique em **Abrir**. (No macOS 14 ou anterior basta botão direito → **Abrir**. Alternativa no Terminal: `xattr -dr com.apple.quarantine /Applications/Toth.app`.)
 4. Conceda a permissão de **Gravação de Ecrã** (*Definições do Sistema → Privacidade e Segurança → Gravação de Ecrã e Áudio do Sistema*) e volte a abrir a app. O Toth aparece no **Dock** e na **barra de menus**; clicar no ícone do Dock abre o editor.
@@ -96,6 +97,7 @@ Gratuita, de código fechado. Dúvidas e problemas: abra uma *issue* neste repos
 - Each capture is **a single `.capture` file** (a standard ZIP) in `~/Pictures/Capture`, with a name **without spaces**: `Toth_YYYY-MM-DD_HH.MM.SS.capture`. `.capture` files **open with Toth** (double-click, *Open With*, or drag onto the Dock icon).
 
 **Conveniences**
+- **Adjustable window:** it can be narrow (tools slide along the bar; the «‹ ›» arrows scroll the tools **continuously**: a click nudges them, holding keeps them moving, and the wheel/trackpad works too; they dim when there is no more on that side), and the **Properties** panel is always on the right, with a divider you **drag** to resize it until it slides out of sight; when it is hidden a **wide strip** with an obvious grip appears: one click, or dragging left, brings it back (also via *View → Show/Hide Properties*, ⌥⌘P; double-clicking the divider hides it).
 - Toth also appears under *Open With* for images.
 - Each tool **remembers its last customization**, even after you quit the app.
 - **Portuguese and English**, switchable instantly in *Preferences*.
@@ -105,7 +107,7 @@ Gratuita, de código fechado. Dúvidas e problemas: abra uma *issue* neste repos
 macOS 15 or later (Apple Silicon and Intel; tested on Apple Silicon).
 
 ### Install
-1. Under [**Releases**](../../releases/latest), download `Toth-1.3.0.zip` and unzip it.
+1. Under [**Releases**](../../releases/latest), download `Toth-1.4.3.zip` and unzip it.
 2. Drag `Toth.app` to **Applications**.
 3. **First launch (only needed once):** because the app is not yet notarized by Apple, macOS shows *“Toth” Not Opened*, with *Move to Trash* and *Done* buttons. **Don't move it to the Trash.** Click **Done**, open **System Settings → Privacy & Security**, scroll to **Security**, click **Open Anyway** next to “Toth”, confirm with your password or Touch ID, then click **Open**. (On macOS 14 or earlier, right-click → **Open** is enough. Terminal alternative: `xattr -dr com.apple.quarantine /Applications/Toth.app`.)
 4. Grant the **Screen Recording** permission (*System Settings → Privacy & Security → Screen & System Audio Recording*) and reopen the app. Toth shows in the **Dock** and the **menu bar**; clicking the Dock icon opens the editor.
