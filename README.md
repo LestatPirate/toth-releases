@@ -9,7 +9,7 @@
 
 <p align="center"><img src="images/toth-editor-pt.png" alt="Editor do Toth" width="900"></p>
 
-> **Versão 1.2.0 (pré-visualização).** Descarregue em [**Releases**](../../releases/latest). A app ainda não está notarizada pela Apple (ver *Instalar*) e os documentos legais são rascunhos. Este repositório só tem a página de descarregamento; o código-fonte é privado.
+> **Versão 1.3.0 (pré-visualização).** Descarregue em [**Releases**](../../releases/latest). A app ainda não está notarizada pela Apple (ver *Instalar*) e os documentos legais são rascunhos. Este repositório só tem a página de descarregamento; o código-fonte é privado.
 
 ---
 
@@ -27,7 +27,7 @@
 - **Ferramentas:** Mover, Seta, Linha, Texto, Balão, Retângulo, Elipse, Etapa, Marcador, Pixelização, Blur e Tela.
 - **Texto no próprio objeto** (texto, balão, retângulo, elipse): fonte, tamanho, negrito/itálico/sublinhado, cor, alinhamento horizontal e vertical, listas de marcadores ou numeradas.
 - **Cores da linha e do preenchimento** à escolha, espessura, opacidade e sombra.
-- **Etapas numeradas** (1, 2, 3 · I, II, III · i, ii, iii · A, B, C · a, b, c), com cor do círculo e do número, fonte e **reinício da sequência**.
+- **Etapas numeradas** (1, 2, 3 · I, II, III · i, ii, iii · A, B, C · a, b, c), com cor do círculo e do número, fonte e **reinício da sequência**. **Redimensionam-se pelos cantos mantendo a proporção** (ou pelo controlo *Tamanho*), e o número ou a letra acompanha a escala e fica sempre centrado; o último tamanho usado é lembrado.
 - **Blur e Pixelização** com intensidade ajustável, para ocultar informação sensível. Atuam sobre **tudo o que está por baixo**: a imagem e também os objetos inseridos em camadas inferiores (um objeto por cima do efeito continua nítido).
 - **Área de trabalho (Tela):** aumente ou diminua a imagem, com cor de fundo ou transparente; **expande-se sozinha** quando um elemento sai da área.
 - **Camadas:** ordem, ocultar, remover. Qualquer elemento pode ser removido ou editado **mais tarde**, mesmo depois de fechar e reabrir.
@@ -50,7 +50,7 @@
 macOS 15 ou superior (Apple Silicon e Intel; testado em Apple Silicon).
 
 ### Instalar
-1. Em [**Releases**](../../releases/latest), descarregue `Toth-1.2.0.zip` e descomprima.
+1. Em [**Releases**](../../releases/latest), descarregue `Toth-1.3.0.zip` e descomprima.
 2. Arraste `Toth.app` para a pasta **Aplicações**.
 3. **Primeira abertura (só é preciso uma vez):** como a app ainda não está notarizada pela Apple, o macOS mostra *“Toth” não aberto*, com os botões *Mover para o Lixo* e *OK*. **Não mova para o Lixo.** Clique em **OK**, abra **Definições do Sistema → Privacidade e Segurança**, desça até **Segurança**, clique em **Abrir mesmo assim** junto a “Toth”, confirme com a palavra-passe ou Touch ID e clique em **Abrir**. (No macOS 14 ou anterior basta botão direito → **Abrir**. Alternativa no Terminal: `xattr -dr com.apple.quarantine /Applications/Toth.app`.)
 4. Conceda a permissão de **Gravação de Ecrã** (*Definições do Sistema → Privacidade e Segurança → Gravação de Ecrã e Áudio do Sistema*) e volte a abrir a app. O Toth aparece no **Dock** e na **barra de menus**; clicar no ícone do Dock abre o editor.
@@ -82,7 +82,7 @@ Gratuita, de código fechado. Dúvidas e problemas: abra uma *issue* neste repos
 - **Tools:** Move, Arrow, Line, Text, Callout, Rectangle, Ellipse, Step, Highlighter, Pixelate, Blur and Canvas.
 - **Text directly in the object** (text, callout, rectangle, ellipse): font, size, bold/italic/underline, color, horizontal and vertical alignment, bulleted or numbered lists.
 - Your choice of **line and fill colors**, thickness, opacity and shadow.
-- **Numbered steps** (1, 2, 3 · I, II, III · i, ii, iii · A, B, C · a, b, c), with circle and number colors, font, and **sequence restart**.
+- **Numbered steps** (1, 2, 3 · I, II, III · i, ii, iii · A, B, C · a, b, c), with circle and number colors, font, and **sequence restart**. They **resize by their corners keeping the proportions** (or with the *Size* control), and the number or letter scales along and stays centered; the last size used is remembered.
 - **Blur and Pixelate** with adjustable strength, to hide sensitive information. They act on **everything beneath them**: the image and also objects on lower layers (an object above the effect stays sharp).
 - **Work area (Canvas):** enlarge or shrink the image, with a background color or transparent; it **expands automatically** when an element goes outside the area.
 - **Layers:** order, hide, remove. Any element can be removed or edited **later**, even after closing and reopening.
@@ -105,7 +105,7 @@ Gratuita, de código fechado. Dúvidas e problemas: abra uma *issue* neste repos
 macOS 15 or later (Apple Silicon and Intel; tested on Apple Silicon).
 
 ### Install
-1. Under [**Releases**](../../releases/latest), download `Toth-1.2.0.zip` and unzip it.
+1. Under [**Releases**](../../releases/latest), download `Toth-1.3.0.zip` and unzip it.
 2. Drag `Toth.app` to **Applications**.
 3. **First launch (only needed once):** because the app is not yet notarized by Apple, macOS shows *“Toth” Not Opened*, with *Move to Trash* and *Done* buttons. **Don't move it to the Trash.** Click **Done**, open **System Settings → Privacy & Security**, scroll to **Security**, click **Open Anyway** next to “Toth”, confirm with your password or Touch ID, then click **Open**. (On macOS 14 or earlier, right-click → **Open** is enough. Terminal alternative: `xattr -dr com.apple.quarantine /Applications/Toth.app`.)
 4. Grant the **Screen Recording** permission (*System Settings → Privacy & Security → Screen & System Audio Recording*) and reopen the app. Toth shows in the **Dock** and the **menu bar**; clicking the Dock icon opens the editor.
